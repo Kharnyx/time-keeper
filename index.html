@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Keeper</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="public/style.css">
+    <!-- App Data -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <!-- Favicon + App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/web-app-manifest-192x192.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <meta name="theme-color" content="#3c98ff">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab selected" id="stopwatch-tab">Stopwatch</div>
+            <div class="tab" id="timer-tab">Timer</div>
+        </div>
+        <div class="contents">
+            <div class="timer-display">
+                <div id="timer-progress"></div>
+                <div id="display">00:00.00</div>
+                <input id="time-input" type="number" style="position: absolute; left: -9999px;">
+            </div>
+            <div class="buttons">
+                <div class="universal-buttons">
+                    <button id="start-pause-timer">Start</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+                <div class="timer-buttons" id="timer-buttons">
+                    <button value="30000">+0:30</button>
+                    <button value="60000">+1:00</button>
+                    <button value="300000">+5:00</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="public/script.js"></script>
+</body>
+
+</html>
